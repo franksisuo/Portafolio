@@ -110,7 +110,7 @@ function AmbientBackground() {
 }
 
 const metrics = [
-  { label: "Sistemas construidos", value: "2" },
+  { label: "Sistemas construidos", value: "3" },
   { label: "Especialidad", value: "Full Stack, scraping y dashboards" },
   { label: "Automatizacion", value: "Procesos, datos y reportes operativos" },
   { label: "Enfoque", value: "Soluciones internas para operaciones reales" },
@@ -146,6 +146,22 @@ const projects = [
       "Base de datos MariaDB mediante PDO.",
     ],
     tags: ["PHP", "JavaScript", "MariaDB", "Leaflet", "OSRM"],
+  },
+  {
+    title: "La Casa de Habsburgo",
+    eyebrow: "React / TypeScript / Supabase",
+    media: asset("la-casa-de-habsburgo.png"),
+    mediaAlt: "Pagina principal de La Casa de Habsburgo",
+    url: "https://www.lacasadehabsburgo.cl/",
+    description:
+      "Ecommerce de moda circular premium para presentar colecciones, productos, categorias y contenido de marca con una experiencia visual limpia y orientada a conversion.",
+    features: [
+      "Catalogo organizado por categorias y colecciones.",
+      "Experiencia responsive para vitrina comercial.",
+      "Integracion con servicios externos para productos y cuenta de usuario.",
+      "Ajustes aplicados sobre base generada con Lovable.",
+    ],
+    tags: ["React", "TypeScript", "Vite", "Supabase", "Shopify", "Zustand", "TanStack Router"],
   },
 ];
 
@@ -328,6 +344,12 @@ function ProjectCard({ project, reverse, onExpand }) {
             <span key={tag}>{tag}</span>
           ))}
         </div>
+        {project.url ? (
+          <a className="project-link" href={project.url} target="_blank" rel="noreferrer">
+            Ver sitio
+            <ArrowUpRight size={17} />
+          </a>
+        ) : null}
       </div>
     </motion.article>
   );
