@@ -505,7 +505,7 @@ function Footer() {
     >
       <div>
         <p className="eyebrow">Contacto</p>
-        <h2>Disponible para crear sistemas web, automatizaciones y dashboards operativos.</h2>
+        <h2>Tienes una idea o proyecto en mente? Conversemos y veamos como convertirlo en una herramienta web funcional.</h2>
       </div>
       <a className="button primary" href="mailto:franksisuo@outlook.es">
         franksisuo@outlook.es
